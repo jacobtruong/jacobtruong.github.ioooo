@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>Home Page</title>
+    </head>
+    <body>
+        <header>
+
+            <div class="logo">
+                <a href="index.html"><img src="images\Logo.png" alt="logo" width="100" height="100"></a>
+            </div>
+            
+            <nav id="nav_bar"> 
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="category.html">Sci-fi</a></li>
+                    <li><a href="category.html">Fantasy</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="general_div">
+            <h2>Contact Us</h2>
+            <p>Please fill in the form below to Contact us:</p>
+
+            <form onsubmit="return false;" method="post" action="contact.html" enctype="multipart/form-data">
+                <div class="form-row">
+                    <div class="form-label"><label for="purpose">Contact Purpose:</label></div>
+                    <div class="form-field"> 
+                        <select id="purpose" name="purpose">
+                        <option value="sell">I want to sell books</option>
+                        <option value="buy">I want to buy books</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <br>
+
+                <div class="form-row">
+                    <div class="form-label"><label for="name">Your name:</label></div>
+                    <div class="form-field">
+                        <input required id="name" type="text" name="name" maxlength="50">
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="form-row">
+                    <div class="form-label"><label for="email">Your e-mail:</label></div>
+                    <div class="form-field">
+                        <input required id="email" type="email" name="email">
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="form-row">
+                    <div class="form-label"><label for="phone">Your phone:</label></div>
+                    <div class="form-field">
+                        <input required id="phone" type="tel" name="phone" pattern="[0-9]{9,13}" title="Enter 9 to 13 digits">
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="form-row">
+                    <div class="form-label"><label>Preferred method for contact:</label></div>
+                    <div class="form-field">
+                        <ul>
+                        <li>
+                            <input type="radio" id="contact_email" name="contact_method" value="email">
+                            <label for="contact_email">Email</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="contact_phone" name="contact_method" value="phone">
+                            <label for="contact_phone">Phone</label>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="form-row">
+                    <div class="form-label">
+                        <label>Available contact day:</label>
+                    </div>
+                    <div class="form-field">
+                        <ol>
+                        <li>
+                            <input type="checkbox" id="contact_day_mon" name="contact_days[]" value="mon">
+                            <label for="contact_day_mon">Monday</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="contact_day_tue" name="contact_days[]" value="tue">
+                            <label for="contact_day_tue">Tuesday</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="contact_day_wed" name="contact_days[]" value="wed">
+                            <label for="contact_day_wed">Wednesday</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="contact_day_thu" name="contact_days[]" value="thu">
+                            <label for="contact_day_thu">Thursday</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="contact_day_fri" name="contact_days[]" value="fri">
+                            <label for="contact_day_fri">Friday</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="contact_day_sat" name="contact_days[]" value="sat">
+                            <label for="contact_day_sat">Saturday</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="contact_day_sun" name="contact_days[]" value="un">
+                            <label for="contact_day_sun">Sunday</label>
+                        </li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <br>
+
+                <div class="form-row">
+                    <div class="form-label"><label for="message">Your inquiries:</label></div>
+                    <div class="form-field">
+                        <textarea cols="40" rows="10" required id="message" name="message"></textarea>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="form-row">
+                    <div class="form-label"><label for="attachment">Your attachment:</label></div>
+                    <div class="form-field">
+                        <input type="file" name="attachment" id="attachment">
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="form-row">
+                    <input type="reset" value="Clear Form">
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </div>
+
+        <br>
+        <br>
+
+        <footer>
+            <nav id="nav_bar"> 
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Copyright</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>

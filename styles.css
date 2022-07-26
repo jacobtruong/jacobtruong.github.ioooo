@@ -1,0 +1,201 @@
+/* Header and Footer */
+header  {
+    position: relative;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    margin: auto;
+    padding: 20px;
+    text-align: left;
+    width: 60%;
+}
+
+footer {
+    position: relative;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    margin: auto;
+    padding: 20px;
+    text-align: left;
+    width: 60%;
+    height: 30px;
+}
+
+/* IDs */
+
+#nav_bar {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#nav_bar li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0;
+}
+
+#big_book_image {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0;
+}
+
+#small_book_images {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0;
+}
+
+#book_price {
+    display: inline-block;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    top: -300px;
+    padding: 0;
+}
+
+#add_to_cart {
+    display: inline-block;
+    position: relative;
+    bottom: 100;
+    padding: 0;
+    left: -80px;
+}
+
+/* Classes */
+
+.breadcrumb {
+    text-align: center;
+}
+
+.align_text_middle {
+    text-align: center;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.box {
+    display: block;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: auto;
+    width: 60%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.box .box_item /* div with horizontal boxes*/{
+    outline: 1px solid #ccc;
+    outline-offset: 5px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0;
+}
+
+.book_details {
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: auto;
+    width: 60%;
+    height: auto;
+}
+
+.small_images {
+    width: 50px;
+    height: 50px;
+}
+
+.general_div {
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: auto;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 960px) {
+    header #nav_bar li {
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 0;
+    }
+
+    #big_book_image {
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 0;
+    }
+    
+    #small_book_images {
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 0;
+    }
+
+    #small_book_images ul li {
+        display: inline;
+    }
+
+    #book_price {
+        display: inline-block;
+        position: relative;
+        margin-left: 20px;
+        margin-right: 20px;
+        top: 0px;
+        padding: 0;
+    }
+
+    #add_to_cart {
+        display: block;
+        position: relative;
+        bottom: 100;
+        padding: 0;
+        left: 0px;
+    }
+
+    .book_details {
+        display: block;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin: auto;
+        width: 60%;
+        height: auto;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 961px) {
+    .form-label {
+        display: inline;
+        width: 100px;
+        margin-right: 10px;
+    }
+    
+    .form-field {
+        display: inline;
+        width: 100px;
+        margin-right: 10px;
+    }
+}
